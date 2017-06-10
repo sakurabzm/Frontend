@@ -1,0 +1,19 @@
+[0m[[0minfo[0m] [0mFull optimizing C:\Frontend\target\scala-2.12\scala-js-tutorial-opt.js[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 791009 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 847732 us[0m
+[0m[[0mdebug[0m] [0mBasic Linking: 1656450 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: true[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 341256 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 5026 methods.[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 1640465 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 2007423 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 118334 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 27674 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 148984 us[0m
+[0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 514[0m
+[0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 0 -- invalidated: 2300[0m
+[0m[[0mdebug[0m] [0mEmitter (create Closure trees): 2255251 us[0m
+[0m[[0minfo[0m] [0mClosure: 0 error(s), 0 warning(s)[0m
+[0m[[0mdebug[0m] [0mClosure: Compiler pass: 25994623 us[0m
+[0m[[0mdebug[0m] [0mClosure: Write result: 2295408 us[0m
+[0m[[0mdebug[0m] [0mGlobal IR cache stats: reused: 0 -- invalidated: 43 -- trees read: 657[0m

@@ -1,0 +1,16 @@
+[0m[[0minfo[0m] [0mFast optimizing C:\Frontend\target\scala-2.12\scala-js-tutorial-test-fastopt.js[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 1019416 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 778509 us[0m
+[0m[[0mdebug[0m] [0mBasic Linking: 1848318 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: false[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 840541 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 88 methods.[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 2804958 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 3762150 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 763167 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 29031 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 792947 us[0m
+[0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 559 -- invalidated: 2[0m
+[0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 3317 -- invalidated: 46[0m
+[0m[[0mdebug[0m] [0mEmitter (write output): 598216 us[0m
+[0m[[0mdebug[0m] [0mGlobal IR cache stats: reused: 9 -- invalidated: 1 -- trees read: 1[0m

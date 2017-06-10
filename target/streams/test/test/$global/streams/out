@@ -1,0 +1,11 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(de.tkip.sbpm.frontend.TutorialTest, org.scalajs.testadapter.FingerprintSerializers$DeserializedSubclassFingerprint@67eb2808, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m-----------------------------------Results-----------------------------------[0m
+[0m[[0minfo[0m] [0mde.tkip.sbpm.frontend.TutorialTest		[32mSuccess[0m[0m
+[0m[[0minfo[0m] [0m    HelloWorld		[32mSuccess[0m[0m
+[0m[[0minfo[0m] [0m    ButtonClick		[32mSuccess[0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTests: 3[0m
+[0m[[0minfo[0m] [0mPassed: 3[0m
+[0m[[0minfo[0m] [0mFailed: 0[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	de.tkip.sbpm.frontend.TutorialTest[0m
