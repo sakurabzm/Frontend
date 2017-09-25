@@ -30,7 +30,7 @@ object AppRouter extends JSApp  {
     (emptyRule
       | staticRoute(root, Home) ~> render(HomePage.component(""))
       | staticRoute("#process", Process) ~> render(DocoPage.component())
-//      | subjectRoutes
+      | staticRoute("#subjects", Home) ~> render(HomePage.component(""))
       |dynamicRouteCT("#subjects" / int.caseClass[SubjectPages]) ~> dynRender(SubjectViewPage.component(_))
       ).notFound(redirectToPage(Home)(Redirect.Replace))
   }

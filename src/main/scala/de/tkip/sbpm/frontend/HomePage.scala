@@ -6,15 +6,23 @@ import japgolly.scalajs.react.extra.router.RouterConfigDsl
 import japgolly.scalajs.react.extra.{Reusability, StateSnapshot}
 import japgolly.scalajs.react.vdom.html_<^.{<, _}
 import de.tkip.sbpm.frontend.AppRouter._
+
 import scala.scalajs.js
 import org.scalajs.dom
+
 import js.annotation._
+import scala.collection.mutable.ListBuffer
 
 /**
   * Created by Wang on 2017/3/23.
   */
+
+
+
 object HomePage {
 
+
+  val subjects = ListBuffer[Subject]()
   var subjectsnumber = 3
 
   val component = ScalaComponent.builder[String]("HomePage").render
@@ -34,15 +42,7 @@ object HomePage {
   val InnerY = 150
   val MoveDist  =  24
 
-  case class Subject(sn: Int)
 
-
-
-  def behaviorPage(id: String) = Callback {
-    println("id: " + id)
-    val url = "http://localhost:12345/#subjects/" + id
-    dom.window.location.href = url
-  }
 
 
   val OuterDiv =
@@ -76,26 +76,20 @@ object HomePage {
     def init: Callback =
       Callback(outerRef.focus())
 
-    val SubjectGraph = ScalaComponent.builder[Long]("Subject graph")
-      .render_P{
-        p =>
-          InnerDiv(
-            ^.zIndex := p.toString,
-            ^.left := (100 * p + 10).px,
-            ^.top  := 10.px,
-            ^.onDoubleClick --> behaviorPage(p.toString))
-      }.build
-
-    def subjectGraph(index: Int) = {
-      SubjectGraph.withKey(index)(index)
+    def subjectsview(): ListBuffer[VdomElement] ={
+      for(sub <- ProcessInstance.getSubjects())
+        yield sub.getGraph()
     }
+    
 
     def render(i: Int) ={
       <.div(
         <.button("Add Subject", ^.onClick ==> addSubject),
         <.br,
         OuterDiv.ref(outerRef = _)(
-        Array.tabulate(subjectsnumber)(subjectGraph).toVdomArray
+          ProcessInstance.arrowsView().toVdomArray,
+//          ProcessInstance.arrowTest(),
+          subjectsview().toVdomArray
         )
       )
     }
